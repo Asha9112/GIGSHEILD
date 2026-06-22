@@ -1,0 +1,162 @@
+.complete-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.complete-card {
+  width: 100%;
+  max-width: 700px;
+
+  background: white;
+
+  border-radius: 30px;
+
+  padding: 50px;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.08);
+}
+
+.success-icon {
+  font-size: 80px;
+  color: #22c55e;
+
+  margin-bottom: 20px;
+}
+
+.complete-card h1 {
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.complete-card h2 {
+  color: #22c55e;
+  margin-bottom: 20px;
+}
+
+.success-text {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.membership-card {
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #1e3a8a
+    );
+
+  color: white;
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  margin-bottom: 30px;
+}
+
+.membership-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+
+.membership-body {
+  display: grid;
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.membership-body label {
+  display: block;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+.membership-body h3 {
+  margin: 0;
+}
+
+.active-status {
+  color: #4ade80;
+}
+
+.success-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  margin-bottom: 35px;
+
+  flex-wrap: wrap;
+}
+
+.success-benefits div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #f8fafc;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+}
+
+.dashboard-btn {
+  width: 100%;
+
+  border: none;
+
+  background: #ff6b00;
+  color: white;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.dashboard-btn:hover {
+  background: #e85f00;
+}
+
+@media (max-width: 768px) {
+
+  .complete-card {
+    padding: 30px 20px;
+  }
+
+  .membership-body {
+    grid-template-columns: 1fr;
+  }
+
+  .complete-card h1 {
+    font-size: 32px;
+  }
+
+}

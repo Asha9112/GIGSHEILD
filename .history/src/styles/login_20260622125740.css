@@ -1,0 +1,53 @@
+import "../styles/login.css";
+
+.login-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.login-card {
+  width: 450px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  text-align: center;
+}
+
+.phone-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.phone-input span {
+  background: #eee;
+  padding: 14px;
+}
+
+.phone-input input {
+  flex: 1;
+  padding: 14px;
+}
+
+.otp-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.otp-boxes input {
+  width: 50px;
+  height: 55px;
+  text-align: center;
+}

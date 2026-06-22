@@ -1,0 +1,91 @@
+.claim-success-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.claim-success-card {
+  width: 100%;
+  max-width: 650px;
+
+  background: white;
+
+  border-radius: 28px;
+
+  padding: 50px;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.08);
+}
+
+.success-icon {
+  font-size: 80px;
+  color: #22c55e;
+
+  margin-bottom: 20px;
+}
+
+.claim-success-card h1 {
+  margin-bottom: 15px;
+}
+
+.claim-success-card p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.claim-details {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  margin-bottom: 30px;
+}
+
+.claim-details div {
+  background: #f8fafc;
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  min-width: 180px;
+}
+
+.claim-details span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.pending-status {
+  color: #f59e0b;
+}
+
+.dashboard-btn {
+  border: none;
+
+  background: #ff6b00;
+  color: white;
+
+  padding: 14px 30px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .claim-details {
+    flex-direction: column;
+  }
+
+  .claim-success-card {
+    padding: 30px 20px;
+  }
+}
