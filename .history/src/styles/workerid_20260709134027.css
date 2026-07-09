@@ -1,0 +1,651 @@
+/* =========================================================
+   WORKER ID PAGE
+========================================================= */
+
+.workerid-page {
+  min-height: 100vh;
+  padding: 55px 24px 80px;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(24, 166, 111, 0.07),
+      transparent 35%
+    ),
+    #f4f7fa;
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.workerid-title-section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.workerid-title-section > span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #11a66d;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.workerid-title-section h1 {
+  margin: 0 0 10px;
+  color: #0c2850;
+  font-size: 34px;
+}
+
+.workerid-title-section p {
+  margin: 0;
+  color: #667085;
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   CARD WRAPPER
+========================================================= */
+
+.id-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 30px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   COMMON CARD
+========================================================= */
+
+.id-card {
+  position: relative;
+  width: 360px;
+  height: 570px; /* changed from 540px */
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dfe5ec;
+  border-radius: 18px;
+  box-shadow:
+    0 18px 45px rgba(12, 40, 80, 0.14);
+}
+
+
+/* =========================================================
+   FRONT HEADER
+========================================================= */
+
+.id-front-header {
+  position: relative;
+  height: 100px;
+  padding: 22px 25px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      #071c38,
+      #0b3154
+    );
+  color: white;
+}
+
+.id-brand-row {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.id-logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 48px;
+  color: #20c486;
+  border: 2px solid #20c486;
+  border-radius: 45% 45% 55% 55%;
+  font-size: 22px;
+}
+
+.id-brand-text h1 {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.id-brand-text h1 span {
+  color: #22b879;
+}
+
+.id-brand-text p {
+  margin: 7px 0 0;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   GREEN CURVE
+========================================================= */
+
+.id-green-curve {
+  position: absolute;
+  top: 72px;
+  right: -35px;
+  z-index: 2;
+  width: 230px;
+  height: 45px;
+  border-bottom: 7px solid #16ae73;
+  border-radius: 0 0 70% 60%;
+  transform: rotate(-4deg);
+}
+
+
+/* =========================================================
+   FRONT BODY
+========================================================= */
+
+.id-front-body {
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  gap: 18px;
+  min-height: 260px;
+  padding: 22px 18px 16px;
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.id-photo-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.worker-photo {
+  width: 135px;
+  height: 180px;
+  overflow: hidden;
+  background: #e9f1ff;
+  border-radius: 10px;
+}
+
+.worker-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.worker-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #1769e0;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.platform-section {
+  margin-top: 17px;
+}
+
+.platform-section span {
+  display: block;
+  margin-bottom: 5px;
+  color: #667085;
+  font-size: 10px;
+}
+
+.platform-section strong {
+  color: #0d9f69;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   WORKER DETAILS
+========================================================= */
+
+.worker-details {
+  min-width: 0;
+}
+
+.worker-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  background: #19aa70;
+  color: white;
+  border-radius: 7px;
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.worker-details h2 {
+  margin: 0;
+  color: #152238;
+  font-size: 20px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.worker-role {
+  margin: 5px 0 15px;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.worker-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 11px;
+}
+
+.detail-icon {
+  display: flex;
+  flex: 0 0 26px;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: #f0f4f8;
+  color: #0d3158;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.worker-detail-row span {
+  display: block;
+  margin-bottom: 2px;
+  color: #667085;
+  font-size: 9px;
+}
+
+.worker-detail-row strong {
+  display: block;
+  max-width: 145px;
+  overflow: hidden;
+  color: #172033;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.worker-detail-row .green-value {
+  color: #10a66c;
+}
+
+
+/* =========================================================
+   PROTECTION STRIP
+========================================================= */
+
+.protection-strip {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 58px;
+  padding: 10px 18px;
+  background:
+    linear-gradient(
+      90deg,
+      #0e9d68,
+      #15b978
+    );
+  color: white;
+}
+
+.protection-shield {
+  display: flex;
+  flex: 0 0 36px;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 42px;
+  border: 2px solid white;
+  border-radius: 45% 45% 55% 55%;
+  font-size: 17px;
+}
+
+.protection-strip p {
+  margin: 0 0 5px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.protection-strip span {
+  display: block;
+  font-size: 9px;
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   VERIFY SECTION
+========================================================= */
+
+.verify-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  padding: 15px 20px;
+  background:
+    linear-gradient(
+      135deg,
+      #071d3a,
+      #0a3156
+    );
+  color: white;
+}
+
+.verify-text h4 {
+  margin: 0 0 7px;
+  font-size: 12px;
+}
+
+.verify-text p {
+  max-width: 180px;
+  margin: 0 0 7px;
+  color: #e6edf5;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.verify-text span {
+  color: #35d99a;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.qr-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+}
+
+
+/* =========================================================
+   BACK CARD
+========================================================= */
+
+.id-back {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+
+/* =========================================================
+   BACK HEADER
+========================================================= */
+
+.back-header {
+  padding: 25px 25px 0;
+  text-align: center;
+}
+
+.back-header h2 {
+  margin: 0;
+  color: #14233a;
+  font-size: 21px;
+}
+
+.back-header h2 span {
+  color: #129f69;
+}
+
+.back-header-line {
+  width: 100%;
+  height: 1px;
+  margin-top: 14px;
+  background: #17a66d;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 22px 22px 15px;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit svg {
+  margin-bottom: 7px;
+  color: #11a66d;
+  font-size: 30px;
+}
+
+.benefit p {
+  margin: 0;
+  color: #172033;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   HELPLINE
+========================================================= */
+
+.helpline-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0 20px;
+  padding: 15px 20px;
+  background: #e9f8f2;
+  border-radius: 10px;
+}
+
+.helpline-icon {
+  display: flex;
+  flex: 0 0 48px;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #13a66d;
+  color: white;
+  border-radius: 50%;
+  font-size: 21px;
+}
+
+.helpline-box span {
+  color: #172033;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.helpline-box h3 {
+  margin: 3px 0 1px;
+  color: #0fa56b;
+  font-size: 22px;
+}
+
+.helpline-box p {
+  margin: 0;
+  color: #172033;
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   TERMS
+========================================================= */
+
+.terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 25px 10px;
+}
+
+.terms-list div {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.terms-list svg {
+  flex: 0 0 8px;
+  margin-top: 3px;
+  color: #172033;
+  font-size: 7px;
+}
+
+.terms-list span {
+  color: #344054;
+  font-size: 9px;
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.signature-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 5px 28px 14px;
+}
+
+.authorised-signature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.authorised-signature img {
+  width: 85px;
+  height: 34px;
+  margin-bottom: 1px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.authorised-signature strong,
+.issue-date strong {
+  color: #172033;
+  font-size: 9px;
+}
+
+.issue-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.issue-date span {
+  margin-top: 3px;
+  color: #344054;
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   BACK FOOTER
+========================================================= */
+
+.id-back-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 78px;
+  padding: 13px 22px;
+  background:
+    linear-gradient(
+      135deg,
+      #071d3a,
+      #0a3156
+    );
+  color: white;
+}
+
+.footer-logo {
+  display: flex;
+  flex: 0 0 40px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 44px;
+  color: #36d59b;
+  border: 2px solid #36d59b;
+  border-radius: 45% 45% 55% 55%;
+}
+
+.id-back-footer p {
+  margin: 0 0 5px;
+  color: #ffffff;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.id-back-footer span {
+  color: #34d49a;
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .id-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+
+@media (max-width: 430px) {
+
+  .workerid-page {
+    padding: 35px 10px 60px;
+  }
+
+  .workerid-title-section h1 {
+    font-size: 27px;
+  }
+
+  .id-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+}
