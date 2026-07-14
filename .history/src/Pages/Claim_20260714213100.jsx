@@ -375,7 +375,7 @@ function Claim() {
               className="claim-form"
               onSubmit={handleSubmit}
             >
-              {/* ===========================
+                            {/* ===========================
                   CLAIM TYPE
               =========================== */}
 
@@ -581,7 +581,7 @@ function Claim() {
                 onFilesChange={handleDocuments}
               />
 
-              {/* ===========================
+                            {/* ===========================
                   MEMBERSHIP SUMMARY
               =========================== */}
 
@@ -713,12 +713,4 @@ function Claim() {
 
         </section>
 
-      </section>
-
-    </main>
-
-  );
-
-}
-
-export default Claim;
+        
