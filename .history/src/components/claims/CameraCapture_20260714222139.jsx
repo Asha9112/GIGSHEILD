@@ -16,19 +16,19 @@ function CameraCapture({ onImageCapture }) {
   const [capturedImage, setCapturedImage] = useState(null);
   const [cameraOpen, setCameraOpen] = useState(false);
 
-useEffect(() => {
+  useEffect(() => {
 
-  if (
-    cameraOpen &&
-    stream &&
-    videoRef.current
-  ) {
+    return () => {
 
-    videoRef.current.srcObject = stream;
+      if (stream) {
 
-  }
+        stream.getTracks().forEach(track => track.stop());
 
-}, [cameraOpen, stream]);
+      }
+
+    };
+
+  }, [stream]);
 
 
 
@@ -315,6 +315,18 @@ useEffect(() => {
   );
 
 }
+useEffect(() => {
 
+  if (
+    cameraOpen &&
+    stream &&
+    videoRef.current
+  ) {
+
+    videoRef.current.srcObject = stream;
+
+  }
+
+}, [cameraOpen, stream]);
 
 export default CameraCapture;
